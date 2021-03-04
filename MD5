@@ -1,0 +1,13 @@
+4ccef12cd7512429b96e63617ff20e72 *DESCRIPTION
+2a36aa7494f2ace6457a857bcc18f0b8 *NAMESPACE
+7b9fc2633226673fd9abd86bb5c3988b *R/EDOtrans.R
+07a392e99445437b4d7876d8e2aeab66 *R/GMMassessment.R
+455de72018850cf025c9751882e2c4f8 *R/GMMplotGG.R
+3a3d18b4f41c9f5456a280c93294a455 *R/combinedModesParameters.R
+d46fa8ce148f7fdc80e47f1e2a9790bb *R/cutGMM.R
+1f9691fe9916f59d496747840bacf55e *data/FlowcytometricData.rda
+8d2b0b6e97cb76bcfa400f0147e95a76 *data/GMMartificialData.rda
+7879fbd7326c5a5456f9a1428e1281a7 *man/EDOtrans.Rd
+460b639a3628e8af60173e434247776c *man/FlowcytometricData.Rd
+a5e694ee132a36bc30ebfc621ca3b17c *man/GMMartificialData.Rd
+28bfa696a143ed5473a64707650367a4 *man/GMMplotGG.Rd
