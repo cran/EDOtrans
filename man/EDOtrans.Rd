@@ -5,16 +5,23 @@
   The package provides the necessary functions for performing the EDO data transformation.
 }
 \usage{
-EDOtrans(Data, Cls, Means, SDs, Weights, DO = FALSE, PlotGMM = FALSE)
+EDOtrans(Data, Cls, PlotIt = FALSE, FitAlg = "normalmixEM", Criterion = "LR",
+                     MaxModes = 8, MaxCores = 2048, Seed)
 }
 \arguments{
  \item{Data}{the data as a vector.}
  \item{Cls}{the class information, if any, as a vector of similar length as instances in the data.}
- \item{Means}{a list of mean values for a Gaussian mixure.}
- \item{SDs}{a list of standard deviations for a Gaussian mixure.}
- \item{Weights}{a list of weights for a Gaussian mixure.}
- \item{DO}{whether to use the DistributionOptimization method for Gaussian mixture modeling.}
- \item{PlotGMM}{whether to plot the obtained Gaussian mixture model.}
+ \item{PlotIt}{whether to plot the fit directly.}
+ \item{FitAlg}{which fit algorithm to use: "ClusterRGMM" = GMM from ClusterR, 
+  "densityMclust" from mclust,
+  "DO" from DistributionOptimization (slow),
+  "MCMC" = NMixMCMC from mixAK, or
+  "normalmixEM" from mixtools.}
+ \item{Criterion}{which criterion should be used to etsablish the number of modes from the best GMM fit:
+ "AIC", "BIC", "FM", "GAP", "LR" (likelyhhod ratio test), "NbClust" (from NbClust), "SI" (Silverman).}
+ \item{MaxModes}{for automated GMM assessment: the maximum number of modes to be tried.}
+ \item{MaxCores}{for automated GMM assessment: the maximum number of processor cores used under Unix.}
+ \item{Seed}{seed parameter set internally.}
 }
 \value{
   Returns a list of transformed data and class assigments.
@@ -23,7 +30,7 @@ EDOtrans(Data, Cls, Means, SDs, Weights, DO = FALSE, PlotGMM = FALSE)
  \item{Cls}{the class information for each data instance.}
  }
 \references{
- Lotsch, J. (2021): 
+ Lotsch, J., Ultsch, A. (2021):
  EDOtrans -- an R Package for Euclidean distance-optimized data transformation.
 }
 \author{
@@ -32,7 +39,7 @@ EDOtrans(Data, Cls, Means, SDs, Weights, DO = FALSE, PlotGMM = FALSE)
 \examples{
 ## example 1
 data(iris)
-IrisEDOdata <- EDOtrans(as.vector(iris[,1]), as.integer(iris$Species), PlotGMM = TRUE) 
+IrisEDOdata <- EDOtrans(Data = as.vector(iris[,1]), Cls = as.integer(iris$Species))
 }
 \keyword{EDOtrans}
 \keyword{data transformation}
