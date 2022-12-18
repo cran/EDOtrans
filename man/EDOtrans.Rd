@@ -6,7 +6,7 @@
 }
 \usage{
 EDOtrans(Data, Cls, PlotIt = FALSE, FitAlg = "normalmixEM", Criterion = "LR",
-                     MaxModes = 8, MaxCores = 2048, Seed)
+                     MaxModes = 8, MaxCores = getOption("mc.cores", 2L), Seed)
 }
 \arguments{
  \item{Data}{the data as a vector.}
@@ -17,21 +17,21 @@ EDOtrans(Data, Cls, PlotIt = FALSE, FitAlg = "normalmixEM", Criterion = "LR",
   "DO" from DistributionOptimization (slow),
   "MCMC" = NMixMCMC from mixAK, or
   "normalmixEM" from mixtools.}
- \item{Criterion}{which criterion should be used to etsablish the number of modes from the best GMM fit:
- "AIC", "BIC", "FM", "GAP", "LR" (likelyhhod ratio test), "NbClust" (from NbClust), "SI" (Silverman).}
+ \item{Criterion}{which criterion should be used to establish the number of modes from the best GMM fit:
+ "AIC", "BIC", "FM", "GAP", "LR" (likelihood ratio test), "NbClust" (from NbClust), "SI" (Silverman).}
  \item{MaxModes}{for automated GMM assessment: the maximum number of modes to be tried.}
  \item{MaxCores}{for automated GMM assessment: the maximum number of processor cores used under Unix.}
  \item{Seed}{seed parameter set internally.}
 }
 \value{
-  Returns a list of transformed data and class assigments.
- \item{DataEDO}{the EDO transfomed data.}
- \item{EDOfactor}{the factor by which each data point has been deivded.}
+  Returns a list of transformed data and class assignments.
+ \item{DataEDO}{the EDO transformed data.}
+ \item{EDOfactor}{the factor by which each data value has been divided.}
  \item{Cls}{the class information for each data instance.}
  }
 \references{
- Lotsch, J., Ultsch, A. (2021):
- EDOtrans -- an R Package for Euclidean distance-optimized data transformation.
+Ultsch A, Lotsch J. Euclidean distance-optimized data transformation for cluster analysis in biomedical data (EDOtrans).
+BMC Bioinformatics. 2022 Jun 16;23(1):233, https://doi.org/10.1186/s12859-022-04769-w
 }
 \author{
   Jorn Lotsch and Alfred Ultsch
