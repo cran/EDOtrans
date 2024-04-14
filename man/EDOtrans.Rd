@@ -30,8 +30,8 @@ EDOtrans(Data, Cls, PlotIt = FALSE, FitAlg = "normalmixEM", Criterion = "LR",
  \item{Cls}{the class information for each data instance.}
  }
 \references{
-Ultsch A, Lotsch J. Euclidean distance-optimized data transformation for cluster analysis in biomedical data (EDOtrans).
-BMC Bioinformatics. 2022 Jun 16;23(1):233, https://doi.org/10.1186/s12859-022-04769-w
+ Lotsch, J., Ultsch, A. (2021):
+ EDOtrans -- an R Package for Euclidean distance-optimized data transformation.
 }
 \author{
   Jorn Lotsch and Alfred Ultsch

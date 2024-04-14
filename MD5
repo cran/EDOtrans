@@ -1,10 +1,10 @@
-1c7a1eef6346d54162d7c63b39f577f1 *DESCRIPTION
-4735d4fd7163dcba2e376a6dfa4f21fd *NAMESPACE
-fb9b52009e941dd11a1e0bb6d94115c0 *R/EDOtrans.R
-0ddfbd10d3d3d7cb59d37cff426ad9fc *R/combinedModesParameters.R
+4848772449052ad647c0a563ac04e704 *DESCRIPTION
+5ec8b234d84340091f3302768d56fc00 *NAMESPACE
+e367b735e2e9b9b25de52d699aa1ec3a *R/EDOtrans.R
+52128fe4b7f76e6ea20c5eb0dabccc46 *R/combinedModesParameters.R
+98ca5d82fe159d20b6036397403e0e58 *R/get_seed.R
 3adc6e16cfe9960f7150b959dc787a5e *data/FACSdata.rda
 71b937425c323ae510cbb964ed30fb7e *data/GMMartificialData.rda
-1a37c31437a8690869eb0cc246d4c6f8 *inst/CITATION
-a1a20d6c99591a754d0eea3022b7a3bd *man/EDOtrans.Rd
+9239249bdaa2f666b56e33169f4ab4f7 *man/EDOtrans.Rd
 9f4e874d1e03b36bb15662a52199d413 *man/FACSdata.Rd
 a5e694ee132a36bc30ebfc621ca3b17c *man/GMMartificialData.Rd
